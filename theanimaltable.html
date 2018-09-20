@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+	
+	
 <title>The Animal Table</title>
+	
 <style>
+		/*CSS kommentar : embedded style*/
+		/*CSS selector: HTML elementet table*/
 table, th, td {
 	border-collapse: collapse
 }
-	th,td {padding: 10px}
+th, td {
+	padding: 10px
+}
 th {
 	border: 1px solid black
 }
@@ -18,6 +25,8 @@ td {
 	width: 300px;
 }
 </style>
+
+
 </head>
 
 <body>
@@ -26,7 +35,7 @@ td {
   The animal table
   </caption>
   <tr>
-    <th colspan="3">Predatory animals</th>
+    <th scope="colgroup" colspan="3">Predatory animals</th>
   </tr>
   <tbody>
     <tr>
@@ -73,8 +82,8 @@ td {
       <td>Wolf</td>
       <td><em>Canis lupus</em></td>
       <td><figure> <img src="images/images-animal-table/wolf.png" width="231" height="154" alt="wolf in the snow"/>
-          <figcaption>Wolf</figcaption>
-        </figure>
+		  <figcaption>Wolf</figcaption>
+		  </figure></td>
     </tr>
     <tr>
       <td colspan="3">All pictures from <a href="http://www.naturephoto-cz.com/mammals/predatory-animals.html" target="_blank">http://www.naturephoto-cz.com/mammals/predatory-animals.html</a></td>
